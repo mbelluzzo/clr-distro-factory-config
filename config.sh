@@ -28,9 +28,14 @@ KOJI_URL="" # Kojihub URL
 # accessible by the builder user.
 MIXER_ROOT="/srv/mixer"
 MIXER_DIR="${MIXER_ROOT}/${NAMESPACE}"
+MIXER_IMAGE_DIR="${MIXER_DIR}/update/image"
+MIXER_UPDATE_DIR="${MIXER_DIR}/update/www"
 
 STAGING_ROOT="/srv/stage"
 STAGING_DIR="${STAGING_ROOT}/${NAMESPACE}"
+IMAGES_DIR="${STAGING_DIR}/images"
+RELEASES_DIR="${STAGING_DIR}/releases"
+UPDATE_DIR="${STAGING_DIR}/update"
 
 # ==============================================================================
 # You can export custom environment variables (like proxy) bellow
